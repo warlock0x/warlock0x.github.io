@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang=it>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  <!-- Color theme for statusbar -->
+  <meta name="theme-color" content="#000000" />
+  <!-- 强制页面在当前窗口以独立页面显示,防止别人在框架里调用页面 -->
+  <meta http-equiv="window-target" content="_top" />
+  
+
+  
+    <meta property="og:title" content="The GrapheneOS experiment: tesoro mi si è de-googlato il telefono">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://www.danieleargento.net/2022/08/30/The-GrapheneOS-experiment-tesoro-mi-si-e-de-googlato-il-telefono/cover.jpeg">
+    <meta property="og:url" content="https://www.danieleargento.net/2022/08/30/The-GrapheneOS-experiment-tesoro-mi-si-e-de-googlato-il-telefono/index.html">
+    <meta name="twitter:title" content="The GrapheneOS experiment: tesoro mi si è de-googlato il telefono">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="https://www.danieleargento.net/2022/08/30/The-GrapheneOS-experiment-tesoro-mi-si-e-de-googlato-il-telefono/cover.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+  
+
+  
+  <title>The GrapheneOS experiment: tesoro mi si è de-googlato il telefono | Daniele Argento</title>
+  
+  <!--open_graph({
+    twitter_id: theme.twitter, 
+    google_plus: theme.google_plus, 
+    fb_admins: theme.fb_admins, 
+    fb_app_id: theme.fb_app_id
+  })-->
+  
+  <!-- Canonical links -->
+  <link rel="canonical" href="https://www.danieleargento.net/2022/08/30/The-GrapheneOS-experiment-tesoro-mi-si-e-de-googlato-il-telefono/index.html">
+  
+    <link rel="alternate" href="/atom.xml" title="Daniele Argento" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+  
+  
+  
+  <link as='style' href='/css/roboto.css' rel='preload'/>
+  <link href='/css/roboto.css' rel='stylesheet'/>
+  <noscript><link href='/css/roboto.css' rel='stylesheet'/></noscript>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body class="main-center" itemscope itemtype="http://schema.org/WebPage">
+  <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+  <div class="slimContent">
+    <div class="navbar-header">
+      
+      
+      <div class="profile-block text-center">
+        <a id="avatar" href="https://github.com/warlock0x" target="_blank">
+          <img class="img-circle img-rotate" src="/../images/avatar.jpeg" width="200" height="200">
+        </a>
+        <h2 id="name" class="hidden-xs hidden-sm">Daniele Argento</h2>
+        <h3 id="title" class="hidden-xs hidden-sm hidden-md">IT Mercenary</h3>
+        <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i> Roma, Italia</small>
+      </div>
+      
+      <div class="search" id="search-form-wrap">
+
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="Search" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i class="icon icon-search"></i></button>
+            </span>
+        </div>
+    </form>
+    <div class="ins-search">
+  <div class="ins-search-mask"></div>
+  <div class="ins-search-container">
+    <div class="ins-input-wrapper">
+      <input type="text" class="ins-search-input" placeholder="Type something..." x-webkit-speech />
+      <button type="button" class="close ins-close ins-selectable" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+    </div>
+    <div class="ins-section-wrapper">
+      <div class="ins-section-container"></div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+      <ul class="nav navbar-nav main-nav ">
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/.">
+            
+            <i class="icon icon-home-fill"></i>
+            
+            <span class="menu-title">Home</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives">
+            
+            <i class="icon icon-archives-fill"></i>
+            
+            <span class="menu-title">Archives</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-projects">
+          <a href="/projects">
+            
+            <i class="icon icon-code"></i>
+            
+            <span class="menu-title">Projects</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-documents">
+          <a href="/Documents">
+            
+            <i class="icon icon-folder-open"></i>
+            
+            <span class="menu-title">Documenti</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-contatti">
+          <a href="/Contatti">
+            
+            <i class="icon icon-email"></i>
+            
+            <span class="menu-title">Contatti</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about">
+            
+            <i class="icon icon-cup-fill"></i>
+            
+            <span class="menu-title">About</span>
+          </a>
+        </li>
+        
+      </ul>
+      
+	
+    <ul class="social-links">
+    	
+            
+        <li><a href="https://github.com/warlock0x" target="_blank" title="Github" data-toggle=tooltip data-placement=top>
+            <!--i class="icon icon-github"></i-->
+            
+            <img src="https://github.com/favicon.ico" style="width: 16px; height: 16px;">
+            
+        </a></li>
+        
+            
+        <li><a href="https://keybase.io/warlock0x" target="_blank" title="Keybase" data-toggle=tooltip data-placement=top>
+            <!--i class="icon icon-Keybase"></i-->
+            
+            <img src="https://keybase.io/favicon.ico" style="width: 16px; height: 16px;">
+            
+        </a></li>
+        
+            
+        <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top>
+            <!--i class="icon icon-rss"></i-->
+            
+            <i class="icon icon-rss"></i>
+            
+        </a></li>
+        
+    </ul>
+
+    </nav>
+  </div>
+</header>
+
+  
+    <aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget-body">
+      <ul class="recent-post-list list-unstyled ">
+        
+          <li>
+            
+            <div class="item-thumb">
+              <a href="/2022/08/30/The-GrapheneOS-experiment-tesoro-mi-si-e-de-googlato-il-telefono/" class="thumb">
+    
+    
+        <span style="background-image:url(/2022/08/30/The-GrapheneOS-experiment-tesoro-mi-si-e-de-googlato-il-telefono/cover.jpeg)" alt="The GrapheneOS experiment: tesoro mi si è de-googlato il telefono" class="thumb-image"></span>
+    
+</a>
+
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                
+              </p>
+              <p class="item-title">
+                <a href="/2022/08/30/The-GrapheneOS-experiment-tesoro-mi-si-e-de-googlato-il-telefono/" class="title">The GrapheneOS experiment: tesoro mi si è de-googlato il telefono</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-08-30T20:22:15.000Z" itemprop="datePublished">2022-08-30</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-thumb">
+              <a href="/2021/10/30/Come-vendere-droga-online-in-fretta/" class="thumb">
+    
+    
+        <span style="background-image:url(/2021/10/30/Come-vendere-droga-online-in-fretta/cover.jpg)" alt="Come vendere droga online (in fretta)" class="thumb-image"></span>
+    
+</a>
+
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                
+              </p>
+              <p class="item-title">
+                <a href="/2021/10/30/Come-vendere-droga-online-in-fretta/" class="title">Come vendere droga online (in fretta)</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2021-10-30T10:02:23.000Z" itemprop="datePublished">2021-10-30</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-thumb">
+              <a href="/2021/03/11/La-benedizione-di-avere-0-spettatori/" class="thumb">
+    
+    
+        <span style="background-image:url(/2021/03/11/La-benedizione-di-avere-0-spettatori/cover.jpg)" alt="La benedizione di avere 0 spettatori" class="thumb-image"></span>
+    
+</a>
+
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                
+              </p>
+              <p class="item-title">
+                <a href="/2021/03/11/La-benedizione-di-avere-0-spettatori/" class="title">La benedizione di avere 0 spettatori</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2021-03-11T18:15:00.000Z" itemprop="datePublished">2021-03-11</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-thumb">
+              <a href="/2020/12/07/Watch-Dogs-Legion-recensione-nerdaccio-version/" class="thumb">
+    
+    
+        <span style="background-image:url(/2020/12/07/Watch-Dogs-Legion-recensione-nerdaccio-version/watch-dogs-legion.jpg)" alt="Watch Dogs Legion: recensione (nerdaccio version)" class="thumb-image"></span>
+    
+</a>
+
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                
+              </p>
+              <p class="item-title">
+                <a href="/2020/12/07/Watch-Dogs-Legion-recensione-nerdaccio-version/" class="title">Watch Dogs Legion: recensione (nerdaccio version)</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2020-12-07T15:54:03.000Z" itemprop="datePublished">2020-12-07</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-thumb">
+              <a href="/2020/10/09/Trasferire-un-file-con-Netcat/" class="thumb">
+    
+    
+        <span style="background-image:url(/2020/10/09/Trasferire-un-file-con-Netcat/cookie-the-pom-gySMaocSdqs-unsplash.jpg)" alt="Trasferire un file con Netcat" class="thumb-image"></span>
+    
+</a>
+
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                
+              </p>
+              <p class="item-title">
+                <a href="/2020/10/09/Trasferire-un-file-con-Netcat/" class="title">Trasferire un file con Netcat</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2020-10-09T19:49:28.000Z" itemprop="datePublished">2020-10-09</time>
+              </p>
+            </div>
+          </li>
+          
+      </ul>
+    </div>
+  </div>
+  
+
+    
+      
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Archive</h3>
+    <div class="widget-body">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/08/">agosto 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/10/">ottobre 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">marzo 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">dicembre 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">ottobre 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">novembre 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">settembre 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">febbraio 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">gennaio 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">maggio 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">dicembre 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">ottobre 2016</a><span class="archive-list-count">2</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget-body tagcloud">
+      <a href="/tags/FOMO/" style="font-size: 13px;">FOMO</a> <a href="/tags/IBM-Websphere-Portal-8-5-ed-i-rule-based-group/" style="font-size: 13px;">IBM Websphere Portal 8.5 ed i rule based group</a> <a href="/tags/LoRaWAN/" style="font-size: 13px;">LoRaWAN</a> <a href="/tags/abbonamento/" style="font-size: 13px;">abbonamento</a> <a href="/tags/access/" style="font-size: 13px;">access</a> <a href="/tags/access-base-group/" style="font-size: 13px;">access base group</a> <a href="/tags/adsl/" style="font-size: 13px;">adsl</a> <a href="/tags/alternative/" style="font-size: 13px;">alternative</a> <a href="/tags/android/" style="font-size: 13px;">android</a> <a href="/tags/anonymous/" style="font-size: 13px;">anonymous</a> <a href="/tags/apple/" style="font-size: 13px;">apple</a> <a href="/tags/base/" style="font-size: 13px;">base</a> <a href="/tags/calyxos/" style="font-size: 13px;">calyxos</a> <a href="/tags/cambiare-la-data-di-creazione-ad-un-file-word/" style="font-size: 13px;">cambiare la data di creazione ad un file word</a> <a href="/tags/carrier/" style="font-size: 13px;">carrier</a> <a href="/tags/connessione/" style="font-size: 13px;">connessione</a> <a href="/tags/content-creator/" style="font-size: 13px;">content creator</a> <a href="/tags/cybersecurity/" style="font-size: 13.67px;">cybersecurity</a> <a href="/tags/de-google/" style="font-size: 13px;">de-google</a> <a href="/tags/dropbox/" style="font-size: 13px;">dropbox</a> <a href="/tags/ecommerce/" style="font-size: 13px;">ecommerce</a> <a href="/tags/facebook/" style="font-size: 13px;">facebook</a> <a href="/tags/fibra/" style="font-size: 13px;">fibra</a> <a href="/tags/file-transfer/" style="font-size: 13px;">file transfer</a> <a href="/tags/free-wifi/" style="font-size: 13px;">free wifi</a> <a href="/tags/ftp/" style="font-size: 13px;">ftp</a> <a href="/tags/game/" style="font-size: 13px;">game</a> <a href="/tags/google/" style="font-size: 13.33px;">google</a> <a href="/tags/group/" style="font-size: 13px;">group</a> <a href="/tags/hacker/" style="font-size: 13.33px;">hacker</a> <a href="/tags/hackers/" style="font-size: 13.33px;">hackers</a> <a href="/tags/hacking/" style="font-size: 14px;">hacking</a> <a href="/tags/hangout/" style="font-size: 13px;">hangout</a> <a href="/tags/i-am-legend/" style="font-size: 13px;">i am legend</a> <a href="/tags/ibm/" style="font-size: 13px;">ibm</a> <a href="/tags/icloud/" style="font-size: 13px;">icloud</a> <a href="/tags/imap/" style="font-size: 13px;">imap</a> <a href="/tags/influencer/" style="font-size: 13px;">influencer</a> <a href="/tags/instagram/" style="font-size: 13px;">instagram</a> <a href="/tags/internet/" style="font-size: 13px;">internet</a> <a href="/tags/lineageos/" style="font-size: 13px;">lineageos</a> <a href="/tags/mail/" style="font-size: 13.67px;">mail</a> <a href="/tags/microg/" style="font-size: 13px;">microg</a> <a href="/tags/movie/" style="font-size: 13px;">movie</a> <a href="/tags/movie-stuff-io-sono-leggenda/" style="font-size: 13px;">movie stuff io sono leggenda</a> <a href="/tags/netcat/" style="font-size: 13px;">netcat</a> <a href="/tags/netflix/" style="font-size: 13px;">netflix</a> <a href="/tags/nextcloud/" style="font-size: 13px;">nextcloud</a> <a href="/tags/office/" style="font-size: 13px;">office</a> <a href="/tags/pentesting/" style="font-size: 13px;">pentesting</a> <a href="/tags/phishing/" style="font-size: 13.33px;">phishing</a> <a href="/tags/privacy/" style="font-size: 13px;">privacy</a> <a href="/tags/product-placement/" style="font-size: 13px;">product placement</a> <a href="/tags/protonmail/" style="font-size: 13px;">protonmail</a> <a href="/tags/raspberry/" style="font-size: 13px;">raspberry</a> <a href="/tags/raspberrypi/" style="font-size: 13px;">raspberrypi</a> <a href="/tags/ricatto/" style="font-size: 13.33px;">ricatto</a> <a href="/tags/rule/" style="font-size: 13px;">rule</a> <a href="/tags/scam/" style="font-size: 13.33px;">scam</a> <a href="/tags/secops/" style="font-size: 13px;">secops</a> <a href="/tags/security/" style="font-size: 13px;">security</a> <a href="/tags/serie-tv/" style="font-size: 13px;">serie tv</a> <a href="/tags/server/" style="font-size: 13px;">server</a> <a href="/tags/service/" style="font-size: 13px;">service</a> <a href="/tags/signal/" style="font-size: 13px;">signal</a> <a href="/tags/smartphone/" style="font-size: 13px;">smartphone</a> <a href="/tags/smtp/" style="font-size: 13px;">smtp</a> <a href="/tags/social/" style="font-size: 13px;">social</a> <a href="/tags/social-network/" style="font-size: 13px;">social network</a> <a href="/tags/social-networks/" style="font-size: 13px;">social networks</a> <a href="/tags/ssh/" style="font-size: 13px;">ssh</a> <a href="/tags/streaming/" style="font-size: 13px;">streaming</a> <a href="/tags/stuff/" style="font-size: 13px;">stuff</a> <a href="/tags/telefono/" style="font-size: 13px;">telefono</a> <a href="/tags/telegram/" style="font-size: 13px;">telegram</a> <a href="/tags/tor/" style="font-size: 13px;">tor</a> <a href="/tags/truffa/" style="font-size: 13.33px;">truffa</a> <a href="/tags/twitch/" style="font-size: 13px;">twitch</a> <a href="/tags/ubisoft/" style="font-size: 13px;">ubisoft</a> <a href="/tags/videogame/" style="font-size: 13px;">videogame</a> <a href="/tags/watch-dogs/" style="font-size: 13px;">watch dogs</a> <a href="/tags/watch-dogs-legion/" style="font-size: 13px;">watch dogs legion</a> <a href="/tags/websphere/" style="font-size: 13px;">websphere</a> <a href="/tags/whatsapp/" style="font-size: 13px;">whatsapp</a> <a href="/tags/wickr/" style="font-size: 13px;">wickr</a> <a href="/tags/wifi/" style="font-size: 13px;">wifi</a> <a href="/tags/word/" style="font-size: 13px;">word</a> <a href="/tags/wordpress/" style="font-size: 13px;">wordpress</a> <a href="/tags/youtube/" style="font-size: 13px;">youtube</a>
+    </div>
+  </div>
+
+    
+  </div>
+</aside>
+
+  
+  
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <nav id="toc" class="article-toc">
+      <h3 class="toc-title">Sommario</h3>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#L%E2%80%99installazione"><span class="toc-number">1.</span> <span class="toc-text">L’installazione</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Operazioni-preliminari"><span class="toc-number">2.</span> <span class="toc-text">Operazioni preliminari</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#I-password-manager"><span class="toc-number">3.</span> <span class="toc-text">I password manager</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Le-chat"><span class="toc-number">4.</span> <span class="toc-text">Le chat</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Multimedia"><span class="toc-number">5.</span> <span class="toc-text">Multimedia</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Le-email"><span class="toc-number">6.</span> <span class="toc-text">Le email</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#I-calendari"><span class="toc-number">7.</span> <span class="toc-text">I calendari</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#I-social"><span class="toc-number">8.</span> <span class="toc-text">I social</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Car-sharing"><span class="toc-number">9.</span> <span class="toc-text">Car sharing</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Le-banche"><span class="toc-number">10.</span> <span class="toc-text">Le banche</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#I-navigatori"><span class="toc-number">11.</span> <span class="toc-text">I navigatori</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Cena-da-consegna"><span class="toc-number">12.</span> <span class="toc-text">Cena da consegna</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Conclusioni"><span class="toc-number">13.</span> <span class="toc-text">Conclusioni</span></a></li></ol>
+    </nav>
+  </div>
+</aside>
+
+<main class="main" role="main">
+  <div class="content">
+  <article id="post-The-GrapheneOS-experiment-tesoro-mi-si-e-de-googlato-il-telefono" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      
+        
+  
+    <h1 class="article-title" itemprop="name">
+      The GrapheneOS experiment: tesoro mi si è de-googlato il telefono
+    </h1>
+  
+
+      
+      <div class="article-meta">
+        <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2022/08/30/The-GrapheneOS-experiment-tesoro-mi-si-e-de-googlato-il-telefono/" class="article-date">
+	  <time datetime="2022-08-30T20:22:15.000Z" itemprop="datePublished">2022-08-30</time>
+	</a>
+</span>
+        
+        
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link-link" href="/tags/android/" rel="tag">android</a>, <a class="article-tag-link-link" href="/tags/calyxos/" rel="tag">calyxos</a>, <a class="article-tag-link-link" href="/tags/de-google/" rel="tag">de-google</a>, <a class="article-tag-link-link" href="/tags/google/" rel="tag">google</a>, <a class="article-tag-link-link" href="/tags/lineageos/" rel="tag">lineageos</a>, <a class="article-tag-link-link" href="/tags/microg/" rel="tag">microg</a>, <a class="article-tag-link-link" href="/tags/smartphone/" rel="tag">smartphone</a>
+  </span>
+
+
+        
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2022/08/30/The-GrapheneOS-experiment-tesoro-mi-si-e-de-googlato-il-telefono/#comments" class="article-comment-link">Comments</a></span>
+        
+	
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 3.6k(words)</span>
+	
+	
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 22(minutes)</span>
+	
+
+      </div>
+    </div>
+    <div class="article-entry marked-body" itemprop="articleBody">
+      
+        <p>Qualche tempo fa ho perso mio padre, che era l’unica persona con cui usavo il telefono, quindi ho pensato: “visto che ora non mi serve più, chissenefrega, lascio a casa questa specie di <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=qjnlPk1i9bM">spia di Matrix</a> e se a qualcuno serve mi chiama la sera”. Poi, pensandoci meglio, mi sono detto: “vabbè ma se succede un urgenza mentre sto per strada, tipo che mi si ferma la macchina (che ormai ha i suoi 13 anni), sarebbe un casino chiamare il carro attrezzi, per non parlare del car sharing quando serve”, quindi, ora che la mia reperibilità telefonica è sacrificabile, ho deciso di fare un esperimento che rimando da troppo tempo: eradicare Google dal telefono.</p>
+<p>Ho già parlato di come si potrebbe <a href="https://www.danieleargento.net/2019/11/05/la-vita-senza-google/">vivere senza Google</a> e, essendo l’articolo un po’ vecchio, ora le alternative si sono moltiplicate. “Perché togliere Google? Google fa tutto! Mail, calendari, contatti, note, mappe etc…” ed è appunto questo il motivo. Attualmente Google ha su di noi molte più informazioni dell’Agenzia delle Entrate, l’Agenzia del Catasto, l’INPS, Ministero della Difesa e Ministero dell’Interno messi insieme. Chi opera in finanza ha un detto: “mai mettere tutte le uova nello stesso paniere”, quindi usare tutti i servizi della stessa azienda non è cosa saggia.</p>
+<p>Così, spinto dal <a target="_blank" rel="noopener" href="https://mastodon.uno/">fediverso</a>, ho cominciato a vedere come sarebbe possibile avere un telefono senza vendere l’anima (per non dire un altra parte del corpo) al gigante di Mountain View. Ovviamente l’unica possibilità risiede in un telefono a base Android con un sistema Android modificato. Dopo un po’ di ravanamenti, la scelta vergeva su:</p>
+<ul>
+<li>LineageOS</li>
+<li>e/OS/</li>
+<li>CalyxOS</li>
+<li>GrapheneOS</li>
+</ul>
+<p>Purtroppo estraniarsi al 100% da Google non è possibile, perché tante app hanno bisogno dei Google Play Services e, i navigatori, dei servizi Text-To-Speech di Google, che trasformano le indicazioni in parlato (ce ne sono anche di open, ma dire che fanno schifo è fargli un complimento). Quindi abbiamo due approcci:</p>
+<p><strong>MicroG: LineageOS, e/OS/, CalyxOS</strong></p>
+<img src="/2022/08/30/The-GrapheneOS-experiment-tesoro-mi-si-e-de-googlato-il-telefono/thread-microg.jpeg" class="">
+
+<p><a target="_blank" rel="noopener" href="https://microg.org/">MicroG</a> è un software open source che replica i servizi Google per fornirli alle app. Sostanzialmente, le app richiedono informazioni ai servizi Google e MicroG, “mascherato” da servizi Google tramite una tecnica chiamata signature spoofing, richiede a Google le informazioni di cui le app necessitano. Ovviamente MicroG non manda in continuazione i dati del telefono a Google come fanno i veri servizi Google.</p>
+<p><strong>Sandboxed Google Play: GrapheneOS</strong></p>
+<img src="/2022/08/30/The-GrapheneOS-experiment-tesoro-mi-si-e-de-googlato-il-telefono/sandbox.jpeg" class="">
+
+<p>GrapheneOS ha scelto un approccio un po’ diverso. GrapheneOS ha il suo “app store” dove in realtà troviamo solamente le applicazioni essenziali, tipo telefono, sms, browser etc… e la possibilità di installare i veri servizi Google. Questi servizi, tuttavia, gireranno in una <a target="_blank" rel="noopener" href="https://grapheneos.org/features#sandboxed-google-play">sandbox</a>, che sarebbe un contenitore che non gli permette di fare nulla se non le operazioni strettamente necessarie per il funzionamento delle varie app o le operazioni autorizzate da noi. In un sistema Android standard, le app di Google sono installate con dei permessi detti privileged_apps, ovvero hanno pieni poteri sul sistema, girano in background, hanno accesso a tutti i dati del telefono e possono comunicare con la rete come gli pare. Su GrapheneOS, i servizi Google vengono installati con dei permessi detti unprivileged_apps, che sono gli stessi permessi che hanno le app che installiamo dal Play Store, quindi hanno permessi molto limitati e, comunque sia, il sistema blocca qualsiasi loro tentativo di richiedere i dati del telefono e di mandarli in giro per la rete. Essendo normali app, addirittura potete limitargli permessi tipo connessione alla rete, geo-localizzazione etc…</p>
+<p>Siccome MicroG l’ho usato per parecchio tempo (ho avuto per anni LineageOS installato sul One Plus 5), ho deciso di optare per GrapheneOS, dato che non sarebbe un danno se rimanessi senza telefono per via di qualche problema e anche per via del fatto che GrapheneOS è disponibile solo per i telefoni Pixel di Google ed io ho un Pixel 6. Comunque sia avevo un Samsung Galaxy Note 10 per le emergenze.</p>
+<h2 id="L’installazione"><a href="#L’installazione" class="headerlink" title="L’installazione"></a>L’installazione</h2><p>Mi ricordo che quando installai LineageOS sul One Plus 5 ottenni 3 scomuniche e la revoca di tutti i sacramenti. Ma la tecnologia va avanti e gli <a target="_blank" rel="noopener" href="https://www.gnu.org/philosophy/words-to-avoid.html#Hacker">hacker</a> non stanno con le mani in mano, quindi GrapheneOS mette a disposizione una comodissima <a target="_blank" rel="noopener" href="https://grapheneos.org/install/web">installazione web</a>.</p>
+<p>Non mi perdo nel dettaglio, però sostanzialmente i passi sono:</p>
+<ul>
+<li>Attivare la modalità sviluppatore disintegrando di tap la voce “Numero build” sotto le Info del telefono</li>
+<li>Andare nelle opzioni sviluppatori e abilitare il selettore della voce “Sblocco OEM”</li>
+<li>Spegnere il telefono e riavviarlo tenendo premuto volume giù per fermare la partenza al bootloader</li>
+<li>Connettere il telefono al pc, se avete windows dovete scaricare i driver fastboot dal link nella guida di GrapheneOS.</li>
+<li>Cliccare sul bottone “Unlock bootloader”</li>
+<li>Cliccare sul bottone “Download release”, questo scaricherà l’immagine del sistema operativo GrapheneOS in locale attraverso il browser, non dovete salvarlo da nessuna parte.</li>
+<li>Cliccare sul bottone “Flash release”</li>
+<li>Cliccare su “Lock bootloader”</li>
+<li>Riattivare le opzioni sviluppatore come sopra e disattivare l’opzione “Sblocco OEM”.</li>
+</ul>
+<p>⚠️ATTENZIONE!!!⚠️ Per motivi di sicurezza, se doveste abilitare di nuovo l’opzione “Sblocco OEM”, il sistema, al riavvio, farà il wipe di tutti i dati del telefono. Questo serve per evitare possibili compromissioni del sistema operativo.</p>
+<p>Ok, una volta installato, ho avuto a che fare con la bestia. E visto che i toni di GrapheneOS sono noire, così vi racconterò come è andata.</p>
+<h2 id="Operazioni-preliminari"><a href="#Operazioni-preliminari" class="headerlink" title="Operazioni preliminari"></a>Operazioni preliminari</h2><img src="/2022/08/30/The-GrapheneOS-experiment-tesoro-mi-si-e-de-googlato-il-telefono/film-noir-1-1024x576.jpg" class="">
+
+<p>Era un giorno caldo, di quelli in cui anche il ventilatore ti volta le spalle. Appena avviato lo smartphone, quello che mi trovai davanti fu: una mazza.</p>
+<img src="/2022/08/30/The-GrapheneOS-experiment-tesoro-mi-si-e-de-googlato-il-telefono/grapheneos-homescreen.jpeg" class="">
+
+<p>Non c’era niente se non l’app del telefono, sms, un browser fork di chromium chiamato Vanadium, l’app Auditor per controllare la genuinità del sistema appena installato usando un altro smartphone, la camera, la galleria, un lettore PDF, il file manager, i settings, i contatti, l’orologio, la calcolatrice (per calcolare le bestemmie al minuto di media), i contatti e l’applicazione Apps, che avrei usato immediatamente.</p>
+<p>Visto che questa storia della sandbox mi incuriosiva parecchio, aprii Apps e installai:</p>
+<p>Google Services Framework<br>Google Play services<br>Google Play Store<br>Il Google Play Store, in realtà, fu totalmente inutile in quanto utilizzabile solo con un account Google, cosa che volli evitare.</p>
+<p>Comunque sia, in qualche modo, le app andavano installate, perciò installai due app store:</p>
+<ul>
+<li><p><a target="_blank" rel="noopener" href="https://f-droid.org/">F-Droid</a>: uno store alternativo contenente solo app open source. Basta connettersi al sito di F-Droid e scaricare l’apk direttamente dalla pagina.</p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://f-droid.org/it/packages/com.aurora.store/">Aurora Store</a>: scaricabile da F-Droid. Non ha app al suo interno ma funziona da front end per il Google Play Store. Praticamente, quando vogliamo scaricare un app, si presenta al Google Play Store come se fosse un dispositivo Android con un account fittizio e ci permette di scaricare l’app desiderata. Possiamo scegliere se fare login, usare un account anonimo o un account anonimo (insicuro). Qual è la differenza tra anonimo e anonimo (insicuro)? Boh, non l’ho capito, ho capito solamente che con l’anonimo (insicuro), per qualche motivo, risulterà che siamo in Francia. Fare login è tutto un cacchio, quindi uso l’anonimo normale.</p>
+</li>
+</ul>
+<p>Una volta installato il necessario, seguii una guida per configurare al meglio la nuova installazione, tra cui le cose che uno da per scontato, tipo la luminosità adattiva e la rotazione automatica. Non seguii quella guida passo passo perché tante opzioni che lui abilitava a me non servivano, però fu un buon punto di partenza. Quindi arrivò il momento di installare le app che usavo di frequente.</p>
+<h2 id="I-password-manager"><a href="#I-password-manager" class="headerlink" title="I password manager"></a>I password manager</h2><p>La cosa fondamentale fu installare i password manager che utilizzo dato che tutte le app avrebbero avuto bisogno delle credenziali di login. Io uso due password manager: Bitwarden e 1Password.</p>
+<p>Tuttavia, queste due app, sono configurate per richiedere un autenticazione a due fattori, quindi scaricai Authy. Authy mi permette di importare tutte le autenticazioni usando il numero di telefono e dando conferma tramite codice SMS. La cosa è molto comoda, ma il fatto che le mie autenticazioni sono nel “cloud” non mi piace, quindi decisi che l’avrei rimpiazzato con Aegis. Authy è presente solo sul Google Play Store, quindi usai Aurora Store per scaricarlo. Tirai giù tutte le autenticazioni e le decriptai con la password di cifratura, ero pronto per proseguire.</p>
+<p>Bitwarden si trova su F-Droid, lo scaricai, feci login e inserii il codice di autenticazione. In quel momento mi arrivò la mail che mi notificava il pagamento dei 10$ annuali proprio a Bitwarden, lo vidi come un obolo dovuto per il mio password manager preferito. Decisi comunque che, in futuro, lo avrei installato sul mio server a casa, ma avrei comunque continuato a finanziare il progetto.</p>
+<p>Venne il momento di 1Password, sapevo che non sarebbe stato disponibile su F-Droid quindi aprii direttamente Aurora Store e lo scaricai da lì. La configurazione di 1Password è leggermente più complessa perché va inserita anche la chiave, che sarebbe una stringa separata da trattini che somiglia molto alla licenza di Windows. Tuttavia riuscii a fare il setup tramite codice QR. 1Password accedette senza problemi alla camera per la scansione del codice e tutto andò per il meglio.</p>
+<h2 id="Le-chat"><a href="#Le-chat" class="headerlink" title="Le chat"></a>Le chat</h2><p>Scelsi di installare per prime le app di messaggistica, non volevo rimanere isolato dai miei contatti per troppo tempo. Così installai subito Telegram e Whatsapp. Ovviamente nessuna delle due era reperibile su F-Droid quindi dovetti usare Aurora Store. Rimasi sorpreso dalla gradevole interfaccia grafica, anche se i tempi morti tra la fine del download e l’inizio dell’installazione e tra l’inizio dell’installazione e la fine di essa sono tra quelle cose che ti fanno chiedere se tutto stia andando come previsto.</p>
+<p>Ero preparato all’idea di non ricevere le notifiche, per lo meno da parte di Whatsapp perché sapevo utilizzasse il GCM (Google Cloud Messaging) non presente sul mio telefono, mentre Telegram sapevo utilizzasse un suo sistema di notifiche. Invece, con mia sorpresa, notai che ricevevo normalmente le notifiche da entrambe le app, probabilmente il GCM viene acceduto dai Google Play Services o dal Google Services Framework, ma questo non lo saprò mai, dannato software proprietario!</p>
+<p>Venne il momento dei due messenger che apprezzo di più ma che non uso mai per via del fatto che, dei miei pochi contatti, nessuno li usa: Element e Signal.</p>
+<p>Aprii F-Droid ed una sensazione di schifo e disprezzo mi colse: Signal non è presente su F-Droid ma solo su Google Play Store, decisione che sarebbe deludente anche per il suo più celebre sostenitore, Edward Snowden. Decisi quindi di non installarlo e mi rivolsi al secondo.</p>
+<p>Element si trova su F-Droid, insieme a tanti altri messenger che supportano il protocollo <a target="_blank" rel="noopener" href="https://matrix.org/">Matrix</a>. Lo avviai e cominciai la configurazione. Una volta inserite le credenziali su Element, la configurazione va fatta da un altro dispositivo. Quindi aprii Element sul pc desktop e trovai la notifica che indicava il tentativo di accesso del nuovo dispositivo, cliccai su “Accetta” ed il messaggio sullo schermo mi disse che aspettava un segnale dal dispositivo in questione. Il telefono non si accorse che il messenger su computer aveva dato l’ok per il primo step, dovetti quindi relegare sul metodo alternativo. Dopo un po’ di tira e molla, dovuti più che altro ai problemi di refresh di Gnome su PoP_OS, riuscii ad attivare l’account anche sullo smartphone.</p>
+<h2 id="Multimedia"><a href="#Multimedia" class="headerlink" title="Multimedia"></a>Multimedia</h2><p>Vivo praticamente attaccato a Spotify quindi decisi di installarlo. Ovviamente non si trova su F-Droid quindi dovetti ricorrere sempre ad Aurora Store. L’installazione filò liscia, senza problemi, l’app funziona alla perfezione, anche la funzionalità che permette di controllare la riproduzione su altri dispositivi. Credo che Spotify usi PWA (Progressive Web Apps) e che quindi possa potenzialmente funzionare ovunque.</p>
+<p>Non volli installare l’app di YouTube, visto che non la uso mai, quindi optai per NewPipe. NewPipe è un frontend leggero per YouTube che si trova su F-Droid. Ovviamente lo scaricai senza problemi. L’unica cosa strana è che, aprendo un video, rimane in loading all’infinito. Ma non me ne preoccupai perché, da quando lo uso, NewPipe ha sempre avuto di questi problemi.</p>
+<h2 id="Le-email"><a href="#Le-email" class="headerlink" title="Le email"></a>Le email</h2><p>Piano piano sto migrando tutti i miei accout da Gmail a Protonmail, quindi decisi di non installare Gmail. Cercai Protonmail su F-Droid e, come mi aspettavo, non lo trovai. Trovai però Proton VPN. Quindi aprii di nuovo Aurora Store e installai Protonmail. Il login filò liscio. Lo stesso con Tutanota.</p>
+<p>Ho anche altri due indirizzi email, quello del mio sito e quello di iCloud. Decisi di accederli via IMAP/SMTP quindi scaricai il client di posta che conosco meglio: K9-Mail. K9 si trova su F-Droid, lo scaricai e lo configurai per i due indirizzi, ovviamente iCloud mi fece penare più del dovuto ma niente che uno scafato smanettatore non possa superare.</p>
+<h2 id="I-calendari"><a href="#I-calendari" class="headerlink" title="I calendari"></a>I calendari</h2><p>Per i calendari decisi di usare Proton Calendar. Scaricai l’app da Aurora Store ed il login filò liscio. Non sono ancora convinto di questa scelta ma ho tempo per decidere diversamente, tutto sommato i calendari sono una cosa effimera, una volta passato l’evento non c’è bisogno di tenere un archivio.</p>
+<h2 id="I-social"><a href="#I-social" class="headerlink" title="I social"></a>I social</h2><p>Mi assale un forte senso di nausea solamente a sentire nominare tutti i prodotti di Meta o Twitter, quindi da tempo mi sono rivolto ai social decentralizzati.</p>
+<p>Cominciai da Mastodon, di solito usavo il client ufficiale ma, non essendo presente su F-Droid, ho preferito usare un alternativa presente su quello store. Scaricai Husky, ma il fatto che rimaneva costantemente in ascolto per i nuovi messaggi e nella sezione delle notifiche mi alterava non poco, quindi decisi per Tusky. La grafica è praticamente uguale per tutti, quindi cambiare da uno all’altro non è un problema.</p>
+<p>Per quanto riguarda Pixelfed non esiste un app ufficiale, sta per essere rilasciata, ma ho sempre utilizzato PixelDroid, presente su F-Droid. Installai quindi PixelDroid che funzionò senza colpo ferire.</p>
+<h2 id="Car-sharing"><a href="#Car-sharing" class="headerlink" title="Car sharing"></a>Car sharing</h2><p>Di questi servizi ne uso parecchi. Decisi di andare a ritroso relativamente agli ultimi usati, quindi cominciai con Acciona. Ovviamente, di questi servizi, nessuno è su F-Droid, quindi li scaricai tutti da Aurora Store. Installai Acciona ed il messaggio che mi diede il benvenuto fu l’impossibilità di trovare la posizione. Resistetti all’impulso di dare un pugno alla scrivania, anche perché è quella dell’Ikea quindi l’avrei spezzata in due e maledissi la mia stupidità.</p>
+<p>Per quanto riguarda la posizione, un sistema Android, fa affidamento principalmente su un servizio chiamato Google Location Accuracy, facente parte dei Google Play Services. Questo servizio, in un modo Orwellianamente inquietante, possiede l’indice di tutte le reti WiFi con la loro relativa posizione geografica. Avete mai fatto caso al fatto che, se avete la WiFi spenta e aprite Google Maps, vi chiede di accendere la WiFi per migliorare la posizione? Cosa c’entra il WiFi con la posizione? Proprio perché, in base alle reti WiFi presenti intorno a voi ed alla loro relativa potenza, il sistema riesce a capire bene dove vi trovate, anche se il segnale GPS dovesse essere debole o assente. Questo è uno dei motivi per evitare i servizi Google e per spegnere sempre tutte le antenne quando non servono.</p>
+<p>GrapheneOS rigira tutte le richieste di posizione al GPS interno del telefono, anche quelle indirizzate al Google Location Accuracy, ergo, quando si è dentro casa il GPS non prende e queste app sono inconfigurabili.</p>
+<p>Con la scusa di andare a gettare l’immondizia, mi misi in macchina e configurai queste app. Acciona prese la posizione e riuscii a fare login. Stessa cosa per Cooltra, Enjoy e Share N Go. Devo ancora configurare Zig Zag Share ma sono confidente che si comporterà come i suoi colleghi.</p>
+<p>A dire la verità, andando su System e poi Apps, è possibile configurare Google Play Services per utilizzare Google Location Accuracy. Personalmente non ho notato differenze, però magari conviene abilitarlo solo in situazioni particolari, tipo se dobbiamo lasciare una macchina in un parcheggio chiuso e il GPS non prende bene.</p>
+<h2 id="Le-banche"><a href="#Le-banche" class="headerlink" title="Le banche"></a>Le banche</h2><p>Anche queste app si trovano solo su Aurora Store. Cominciai con il mio conto principale, Widiba, l’app si installò e funzionò al primo colpo, anche se, per qualche motivo, non scriveva le etichette dei bottoni ma solo il loro id, ad esempio, non scriveva una cosa tipo “Bonifico” ma una cosa tipo app.label.bonifico, comunque sia comprensibile, le funzionalità c’erano tutte.</p>
+<p>La seconda app fu Bancoposta. Devo dire che Poste Italiane ha intrapreso un percorso di innovazione per niente malvagio e, ad ogni operazione con loro, mi sorprende sempre di più (lato finanziario ovviamente), al contrario di Widiba che era partita con l’essere la banca del futuro per ritrovarsi impantanata nell’800. L’app si installò senza problemi. Provai ad accedere al conto da pc usando l’app come autorizzatore e funzionò a meraviglia.</p>
+<p>N26 seguì lo stesso percorso, nessun problema di sorta.</p>
+<h2 id="I-navigatori"><a href="#I-navigatori" class="headerlink" title="I navigatori"></a>I navigatori</h2><p>Sapevo che questo sarebbe stato il punto più spinoso. Google Maps è regina incontrastata delle app di navigazione e non sapevo se avrei trovato un degno sostituto. Settimane prima del passaggio a GrapheneOS scaricai molte app di navigazione e riuscii a farmi un idea su dove avrei potuto orientarmi. Il responso è stato il seguente:</p>
+<ul>
+<li><p><strong>Here We Go:</strong> delusione totale, non trova la rotta corretta e non segna tutti i velox. Ha problemi con il traffico. Tuttavia ha una funzionalità secondo me geniale, quando si deve girare a destra dà l’indicazione nell’auricolare destro e viceversa per la sinistra, così se non si è sentita bene l’indicazione, in base all’auricolare da cui proveniva il suono, si sa dove girare.</p>
+</li>
+<li><p><strong>Organic Maps:</strong> Punto d’onore perché è disponibile su F-Droid, pensata per la navigazione a piedi ed in bicicletta, manca del traffico e dei mezzi. Non segna i velox. La navigazione in auto è sperimentale quindi spesso fa fare manovre illegali. Non mi aspettavo molto ma tuttavia, devo dire, che ha potenzialità.</p>
+</li>
+<li><p><strong>OsmAnd:</strong> Anche lei disponibile su F-Droid. È fatta molto meglio di Organic Maps, supporta la navigazione in auto. Indica i velox ma non tutti, il tutor vicino casa mia l’ha ignorato bellamente. Non ha indicazioni del traffico quindi potrebbe dare la rotta più trafficata. Tuttavia ha l’integrazione con Wikipedia per avere informazioni sui posti in cui passiamo, molto utile a scopo turistico.</p>
+</li>
+<li><p><strong>Magic Earth:</strong> Piacevole e insolita sorpresa. L’interfaccia è abbastanza spartana ma la navigazione è buona, tra le top, sembra capire bene il traffico. Supporta i velox ma non tutti, più o meno uguale ad OsmAnd, credo attingano dalle stesse fonti. La funzionalità veramente interessante di Magic Earth è quella della Dashcam. Se teniamo il telefono orientato verso il parabrezza, possiamo usufruire del telefono come se fosse una dashcam, registrerà quello che succede davanti a noi ma salverà i secondi di filmato solo su nostra indicazione, come una dashcam vera.</p>
+</li>
+<li><p><strong>Petal Maps:</strong> App di navigazione che rimpiazza Google Maps nei telefoni Huawei vittime del ban di Trump. Nata dal rancore e la rabbia degli ingegneri di Shenzhen, pensavo fosse la migliore ed in effetti ci si è avvicinata molto. Praticamente identica a Tom Tom (di cui parlerò subito sotto) supporta bene traffico e velox. Praticamente perfetta se non fosse per le direzioni, sembra non capire sempre la direzione ottimale, le rotte sono comunque buone, ma non così “intelligenti” come su Tom Tom e Google Maps</p>
+</li>
+<li><p><strong>Tom Tom AmiGO:</strong> È l’unica senza le mappe offline in quanto, per quelle, bisogna scaricare ed abbonarsi alla sorella Tom Tom Go all’”esorbitante” prezzo di 20€ l’anno. È l’app che rimpiazza in tutto e per tutto Google Maps. È una versione più intelligente di Petal Maps, addirittura indica quando comincia un tratto Tutor e quanto è la velocità massima consentita in quel tratto, arrivati alla fine indica la fine del tratto Tutor dicendoci anche la media tenuta nel tratto. Nei miei test su Android Google stock è risultata la scelta definitiva. Tuttavia, su GrapheneOS, è stata esclusa dalle app di navigazione per un solo motivo, tuttavia irrinunciabile: le indicazioni vocali. Infatti, quando vado per scaricare la voce nelle impostazioni di Tom Tom AmiGo, restituisce un errore e quindi la voce durante la navigazione non sarà disponibile. Purtroppo mi è impossibile guidare senza le indicazioni vocali quindi l’ho esclusa a priori.</p>
+</li>
+</ul>
+<p>Alla luce dei miei test, decisi di lasciare Petal Maps e Magic Earth. Scaricai da Aurora Store anche Google Maps, per i casi di emergenza.</p>
+<h2 id="Cena-da-consegna"><a href="#Cena-da-consegna" class="headerlink" title="Cena da consegna"></a>Cena da consegna</h2><p>Le app che utilizzo sono due: Uber Eats e Just Eat. Preferisco Uber Eats per via del fatto che è possibile lasciare la mancia al rider, anche se Just Eat ha una selezione più vasta. Anche Glovo funziona senza problemi.</p>
+<p>Le scaricai e configurai l’account su entrambe; pensavo avrei avuto problemi con il GPS, ma invece la cosa comoda di queste app è il fatto che l’indirizzo di consegna può essere inserito a mano.</p>
+<h2 id="Conclusioni"><a href="#Conclusioni" class="headerlink" title="Conclusioni"></a>Conclusioni</h2><img src="/2022/08/30/The-GrapheneOS-experiment-tesoro-mi-si-e-de-googlato-il-telefono/jonas-leupe-wK-elt11pF0-unsplash-1024x683.jpg" class="">
+
+<p>Dopo una settimana di utilizzo devo dire che non ho avuto problemi. Capisco e concordo col fatto che non è un esperienza per inesperti di tecnologia, l’utente medio del sito di Aranzulla potrebbe maledire varie divinità se dovesse imbattersi in questa impresa.</p>
+<p>Penso sia una scelta consapevole. Quello che spinge a passare ad un sistema de-googlizzato non è la curiosità di provare ma un esigenza specifica di separarsi dai servizi di Google e di riappropriarsi del proprio dispositivo senza dover per forza avere una sonda che invia i propri dati ad una big tech. Togliersi il fastidio di vedere i propri dati mandati ad un azienda americana.</p>
+<p>La de-googlizzazione non vuol dire solamente cambiare il sistema operativo del proprio telefono, è una scelta che inizia dal non utilizzare i servizi Google in primis. Una volta rimpiazzati i servizi Google con le loro valide alternative, togliere Google dal proprio telefono è un operazione necessaria.</p>
+<p>Il mio consiglio è: se siete appassionati di tecnologia e avete un vecchio telefono supportato o avete la possibilità di prenderlo a poco prezzo, provate ad installare uno dei sistemi operativi citati ad inizio articolo. Magari non abbandonerete Google ma avrete una buona conoscenza di come funziona il sistema operativo Android.</p>
+
+      
+    </div>
+    <div class="article-footer">
+      <blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    
+    <li class="post-copyright-link hidden-xs">
+      <strong>Permalink：</strong>
+      <a href="https://www.danieleargento.net/2022/08/30/The-GrapheneOS-experiment-tesoro-mi-si-e-de-googlato-il-telefono/" title="The GrapheneOS experiment: tesoro mi si è de-googlato il telefono" target="_blank" rel="external">https://www.danieleargento.net/2022/08/30/The-GrapheneOS-experiment-tesoro-mi-si-e-de-googlato-il-telefono/</a>
+    </li>
+    
+    <li class="post-copyright-license">
+      License: Copyright (c) 2019 <a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN</a> LICENSE
+    </li>
+  </ul>
+</blockquote>
+
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/warlock0x" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="/../images/avatar.jpeg" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/warlock0x" target="_blank"><span class="text-dark">Daniele Argento</span><small class="ml-1x">IT Mercenary</small></a></h3>
+        <div>Sviluppatore e sistemista, appassionato di cybersecurity</div>
+      </div>
+    </figure>
+  </div>
+</div>
+
+
+    </div>
+  </article>
+  
+    
+  <section id="comments">
+  	
+      <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      </div>
+    
+  </section>
+
+
+  
+</div>
+
+  <nav class="bar bar-footer clearfix" data-stick-bottom>
+  <div class="bar-inner">
+  
+  <ul class="pager pull-left">
+    
+    
+    <li class="next">
+      <a href="/2021/10/30/Come-vendere-droga-online-in-fretta/" title="Come vendere droga online (in fretta)"><span>Older&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
+    
+    
+    <li class="toggle-toc">
+      <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false" title="Sommario" role="button">
+        <span>[&nbsp;</span><span>Sommario</span>
+        <i class="text-collapsed icon icon-anchor"></i>
+        <i class="text-in icon icon-close"></i>
+        <span>]</span>
+      </a>
+    </li>
+    
+  </ul>
+  
+  
+  
+  <div class="bar-right">
+    
+    <div class="share-component" data-sites="facebook,twitter" data-mobile-sites="facebook,twitter"></div>
+    
+  </div>
+  </div>
+</nav>
+
+  
+
+
+</main>
+
+  <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+	
+	
+    <ul class="social-links">
+    	
+            
+        <li><a href="https://github.com/warlock0x" target="_blank" title="Github" data-toggle=tooltip data-placement=top>
+            <!--i class="icon icon-github"></i-->
+            
+            <img src="https://github.com/favicon.ico" style="width: 16px; height: 16px;">
+            
+        </a></li>
+        
+            
+        <li><a href="https://keybase.io/warlock0x" target="_blank" title="Keybase" data-toggle=tooltip data-placement=top>
+            <!--i class="icon icon-Keybase"></i-->
+            
+            <img src="https://keybase.io/favicon.ico" style="width: 16px; height: 16px;">
+            
+        </a></li>
+        
+            
+        <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top>
+            <!--i class="icon icon-rss"></i-->
+            
+            <i class="icon icon-rss"></i>
+            
+        </a></li>
+        
+    </ul>
+
+    <div class="copyright">
+    	
+        <div class="publishby">
+        	Theme by <a href="https://github.com/cofess" target="_blank"> cofess </a>base on <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>.
+        </div>
+        <div class="green-foundation-badge">
+            <img src="https://api.thegreenwebfoundation.org/greencheckimage/www.danieleargento.net?nocache=true" alt="This website is hosted Green - checked by thegreenwebfoundation.org">
+        </div>
+    </div>
+</footer>
+  <script src="//cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script>
+window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+
+<script src="/js/plugin.min.js"></script>
+
+
+<script src="/js/application.js"></script>
+
+
+    <script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+
+
+
+
+   
+
+
+
+
+   
+    
+    <script defer>
+    var disqus_config = function () {
+        
+            this.page.url = 'https://www.danieleargento.net/2022/08/30/The-GrapheneOS-experiment-tesoro-mi-si-e-de-googlato-il-telefono/';
+        
+        this.page.identifier = 'The-GrapheneOS-experiment-tesoro-mi-si-e-de-googlato-il-telefono';
+    };
+    (function() { 
+        var d = document, s = d.createElement('script');  
+        s.src = '//' + 'danieleargento' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+
+
+
+
+
+    <script defer type="text/javascript">
+(function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-118892883-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
