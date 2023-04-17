@@ -35,19 +35,48 @@
     
     
     
-    <category term="google" scheme="https://www.danieleargento.net/tags/google/"/>
-    
     <category term="android" scheme="https://www.danieleargento.net/tags/android/"/>
     
     <category term="calyxos" scheme="https://www.danieleargento.net/tags/calyxos/"/>
     
     <category term="de-google" scheme="https://www.danieleargento.net/tags/de-google/"/>
     
+    <category term="google" scheme="https://www.danieleargento.net/tags/google/"/>
+    
     <category term="lineageos" scheme="https://www.danieleargento.net/tags/lineageos/"/>
     
     <category term="microg" scheme="https://www.danieleargento.net/tags/microg/"/>
     
     <category term="smartphone" scheme="https://www.danieleargento.net/tags/smartphone/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>10 ragioni perché (non) devi fare streaming</title>
+    <link href="https://www.danieleargento.net/2022/07/14/10-ragioni-perche-non-devi-fare-streaming/"/>
+    <id>https://www.danieleargento.net/2022/07/14/10-ragioni-perche-non-devi-fare-streaming/</id>
+    <published>2022-07-14T19:08:01.000Z</published>
+    <updated>2023-04-17T19:23:03.108Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Da quello che si legge in giro, pare che fare content creation sulle piattaforme online sia un metodo facile e veloce per diventare</summary>
+        
+      
+    
+    
+    
+    
+    <category term="social network" scheme="https://www.danieleargento.net/tags/social-network/"/>
+    
+    <category term="twitch" scheme="https://www.danieleargento.net/tags/twitch/"/>
+    
+    <category term="creator" scheme="https://www.danieleargento.net/tags/creator/"/>
+    
+    <category term="tiktok" scheme="https://www.danieleargento.net/tags/tiktok/"/>
     
   </entry>
   
@@ -211,6 +240,8 @@
     
     
     
+    <category term="google" scheme="https://www.danieleargento.net/tags/google/"/>
+    
     <category term="alternative" scheme="https://www.danieleargento.net/tags/alternative/"/>
     
     <category term="anonymous" scheme="https://www.danieleargento.net/tags/anonymous/"/>
@@ -218,8 +249,6 @@
     <category term="apple" scheme="https://www.danieleargento.net/tags/apple/"/>
     
     <category term="dropbox" scheme="https://www.danieleargento.net/tags/dropbox/"/>
-    
-    <category term="google" scheme="https://www.danieleargento.net/tags/google/"/>
     
     <category term="hangout" scheme="https://www.danieleargento.net/tags/hangout/"/>
     
